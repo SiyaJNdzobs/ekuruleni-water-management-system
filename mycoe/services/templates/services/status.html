@@ -1,0 +1,10 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<h2>Track Your Request</h2>
+<p>Enter your reference ID to track status:</p>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="ref_id" required>
+    <button type="submit">Check Status</button>
+</form>
+{% endblock %}

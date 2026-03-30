@@ -1,0 +1,25 @@
+
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content %}
+<section class="hero">
+    <img src="{% static 'images/background.jpg' %}" alt="Hero Image" style="width:100%; height:auto; display:block;">
+</section>
+
+<section class="info">
+    <h2>What Our App Offers</h2>
+    <ul>
+        <li>Report water service issues with image & location</li>
+        <li>Track request progress</li>
+        <li>View and pay bills securely</li>
+        <li>Receive notifications and updates</li>
+    </ul>
+</section>
+
+<section class="blog">
+    <h2>Latest News</h2>
+    <a href="#">How to Report a Burst Pipe Quickly</a><br>
+    <a href="#">Tips for Managing Your Municipal Bill</a>
+</section>
+{% endblock %}
