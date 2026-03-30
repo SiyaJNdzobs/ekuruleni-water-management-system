@@ -1,0 +1,19 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<h2>User Login</h2>
+<form id="loginForm">
+    <input type="text" id="surname" placeholder="Surname" required><br><br>
+    <input type="text" id="cellnumber" placeholder="Cell Number" required><br><br>
+    <input type="password" id="password" placeholder="Password" required><br><br>
+    <button type="submit">Login</button>
+</form>
+<p id="loginFeedback" style="font-weight:bold;"></p>
+
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    // Placeholder verification
+    document.getElementById('loginFeedback').innerText = "Login successful (demo)";
+});
+</script>
+{% endblock %}
